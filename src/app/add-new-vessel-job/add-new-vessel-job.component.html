@@ -1,0 +1,111 @@
+<app-header></app-header>
+<p>&nbsp;</p>
+<form #addNewVesselJob="ngForm" (ngSubmit)="submitNewVesselJob()" novalidate>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0"
+      class="outer_table" >
+      <tr><td align="center">
+      <table width="96%" border="0" cellpadding="0" cellspacing="0"
+      class="inner_table" >
+      <tr>
+        <td colspan="4" align="left" class="toplinks">Add New Vessel Job</td>
+      </tr>
+      <tr>
+      
+        <td colspan="4" align="left" class="input_text_main"> GCSS request will be sent for&nbsp;Maersk Line , Safmarine , Sea Land and Seago Line</td>
+      
+      
+      </tr>
+      
+        <tr>
+          <td colspan="4" align="left" class="input_text_main"> D&amp;D configuration for applicable country is set for Charge Type 'DETENTION AND DEMURRAGE'</td>
+        </tr>
+      
+      <tr class="input_text_blank_row">
+        <td colspan="3" align="left" valign="middle"
+          class="input_text_error_row"></td>
+        <td colspan="3" align="left" valign="middle"
+          class="input_text_blank_row">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="left" valign="middle" class="input_text_main">&nbsp;</td>
+        <td align="left" valign="middle" class="input_text_main">&nbsp;</td>
+        <td align="left" valign="middle">&nbsp;</td>
+        <td align="left" valign="middle">&nbsp;</td>
+      </tr>
+      <tr class="input_text_blank_row">
+        <td align="left" valign="middle" class="input_text_blank_row">&nbsp;</td>
+        <td colspan="3" align="left" valign="middle"
+          class="input_text_error_row">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="33%" align="left" valign="middle" class="input_text_main">&nbsp;</td>
+        <td width="20%" align="left" valign="middle" class="input_text_main"><label id="addNewVesselForm_vesseljobadmin_textbox_vesselcode">Vessel Code:</label><sup
+          class="SUP">*</sup></td>
+        <td width="20%" align="left" valign="middle"><input type="text" name="vesselCode" value="" id="addNewVesselForm_vesselCode" class="textBox" [(ngModel)]="addNewVesselJobModel.vesselCode" /></td>
+        <td width="27%" align="left" valign="middle">&nbsp;</td>
+      </tr>
+      <tr class="input_text_blank_row">
+        <td align="left" valign="middle" class="input_text_blank_row">&nbsp;</td>
+        <td colspan="3" align="left" valign="middle"
+          class="input_text_error_row"></td>
+      </tr>
+      <tr>
+        <td align="left" valign="middle" class="input_text_main">&nbsp;</td>
+        <td align="left" valign="middle" class="input_text_main"><label id="addNewVesselForm_vesseljobadmin_textbox_voyagecode">Voyage Code:</label><sup class="SUP">*</sup></td>
+        <td align="left" valign="middle"><input type="text" name="voyageCode" value="" id="addNewVesselForm_voyageCode" class="textBox" [(ngModel)]="addNewVesselJobModel.voyageCode" /></td>
+        <td align="left" valign="middle" class="input_text_main">&nbsp;</td>
+      </tr>
+      <tr class="input_text_blank_row">
+        <td align="left" valign="middle" class="input_text_blank_row">&nbsp;</td>
+        <td colspan="3" align="left" valign="middle"
+          class="input_text_error_row"></td>
+      </tr>
+      <tr>
+        <td height="57" align="left" valign="middle" class="input_text_main">&nbsp;</td>
+        <td align="left" valign="middle" class="input_text_main"><label id="addNewVesselForm_vesseljobadmin_textbox_portcode">Port Code:</label><sup class="SUP">*</sup></td>
+        <td align="left" valign="middle"><select name="loadPortCode" id="addNewVesselForm_loadPortCode" style="WIDTH:150px" [(ngModel)]="addNewVesselJobModel.loadPortCode">
+      <option value="">Please select port</option>
+      <option value="DE9G4TG">DE9G4TG (TERMINAL GUSTAVSBURG)</option>
+      <option value="DEAOU01">DEAOU01 (TFG DEPOT GERSTHOFEN)</option>
+      <option value="DEAOU02">DEAOU02 (KLOIBER)</option>
+  </select>
+  
+  </td>
+        <td align="left" valign="middle" class="input_text_main">&nbsp;</td>
+      </tr>
+  
+      <tr class="input_text_blank_row">
+        <td align="left" valign="middle" class="input_text_blank_row">&nbsp;</td>
+        <td colspan="3" align="left" valign="middle"
+          class="input_text_error_row"></td>
+      </tr>
+      
+      
+      <tr>
+        <td height="30" align="left" valign="middle" class="input_text_main">&nbsp;</td>
+        <td align="left" valign="middle" class="input_text_main"><label id="addNewVesselForm_vesseljobadmin_textbox_description">Description:</label></td>
+        <td align="left" valign="middle"><input type="text" name="description" value="" id="description" class="textBox" [(ngModel)]="addNewVesselJobModel.description" /></td>
+        <td align="left" valign="middle" class="input_text_main">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="57" colspan="4" align="left" valign="middle"
+          class="input_text_main">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="52" colspan="4" align="right" valign="middle"
+          class="btnArea">
+            
+              <input type="submit" value="Save" id="addNewVesselForm_vesseljobadmin_button_save" name="vesseljobadmin.button.save"/>
+  
+              &nbsp;&nbsp;
+              <input type="reset" value="Reset" id="addNewVesselForm_vesseljobadmin_button_reset" name="vesseljobadmin.button.reset" onclick="resetForm();"/>
+  
+            
+             
+            
+            </td>
+      </tr>
+      </table>
+      </td></tr>
+    </table>
+  </form>

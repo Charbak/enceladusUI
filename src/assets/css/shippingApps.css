@@ -1,0 +1,905 @@
+TD {
+	LINE-HEIGHT: 15px
+}
+
+A {
+	COLOR: #000000;
+	TEXT-DECORATION: none
+}
+
+LEGEND {
+	COLOR: #000000;
+	TEXT-DECORATION: none
+}
+
+A:hover {
+	TEXT-DECORATION: underline
+}
+
+LEGEND {
+	PADDING-RIGHT: 7px;
+	MARGIN-TOP: -5px;
+	LEFT: 5px;
+	LINE-HEIGHT: 20px;
+	POSITION: absolute;
+	TOP: -5px
+}
+
+FIELDSET {
+	BORDER-RIGHT: #4cbcd0 1px solid;
+	BORDER-TOP: #4cbcd0 1px solid;
+	BACKGROUND: #d2eef3;
+	MARGIN: 9px 10px 0px;
+	BORDER-LEFT: #4cbcd0 1px solid;
+	PADDING-TOP: 10px;
+	BORDER-BOTTOM: #4cbcd0 1px solid;
+	POSITION: relative
+}
+
+.whiteBackground {
+	BORDER-RIGHT: #000000 1px solid;
+	BORDER-TOP: #000000 1px solid;
+	BACKGROUND: #ffffff;
+	BORDER-LEFT: #000000 1px solid;
+	BORDER-BOTTOM: #000000 1px solid
+}
+
+.ctrlCenterFirstCol {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	VERTICAL-ALIGN: top;
+	PADDING-TOP: 0px
+}
+
+.ctrlCenterSecondCol {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	VERTICAL-ALIGN: top;
+	PADDING-TOP: 0px
+}
+
+.ctrlCenterFirstCol {
+	PADDING-RIGHT: 7px
+}
+
+.ctrlCenterSecondCol {
+	PADDING-LEFT: 8px
+}
+
+.dlgBtnGlobal {
+	MARGIN-TOP: 2px;
+	MARGIN-RIGHT: 10px;
+	TEXT-ALIGN: right
+}
+
+.dlgActionTxt {
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-BOTTOM: 2px;
+	VERTICAL-ALIGN: baseline;
+	PADDING-TOP: 2px
+}
+
+.infoBarBlack {
+	BORDER-RIGHT: #000000 1px solid;
+	BORDER-TOP: #000000 1px solid;
+	VERTICAL-ALIGN: middle;
+	BORDER-LEFT: #000000 1px solid;
+	WIDTH: 100%;
+	COLOR: #000000;
+	BORDER-BOTTOM: #000000 0px solid;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.infoBar {
+	BORDER-RIGHT: #4cbcd0 1px solid;
+	BORDER-TOP: #4cbcd0 1px solid;
+	VERTICAL-ALIGN: middle;
+	BORDER-LEFT: #4cbcd0 1px solid;
+	WIDTH: 100%;
+	COLOR: #000000;
+	BORDER-BOTTOM: #4cbcd0 0px solid;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.infoBarStart {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	PADDING-BOTTOM: 7px;
+	MARGIN: 0px;
+	PADDING-TOP: 7px
+}
+
+.infoBarEnd {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	PADDING-BOTTOM: 7px;
+	MARGIN: 0px;
+	PADDING-TOP: 7px
+}
+
+.infoBarStart {
+	PADDING-BOTTOM: 9px;
+	PADDING-TOP: 9px
+}
+
+.infoBarStart SELECT {
+	MARGIN-TOP: -10px;
+	MARGIN-BOTTOM: -10px
+}
+
+.infoBarEnd {
+	PADDING-BOTTOM: 5px;
+	PADDING-TOP: 6px;
+	WHITE-SPACE: nowrap;
+	TEXT-ALIGN: right
+}
+
+.infoBarEnd SELECT {
+	FLOAT: right
+}
+
+.actionBar {
+	PADDING-RIGHT: 7px;
+	MARGIN-BOTTOM: 15px;
+	PADDING-BOTTOM: 3px;
+	LINE-HEIGHT: 20px;
+	BACKGROUND-COLOR: #4cbcd0;
+	TEXT-ALIGN: right
+}
+
+.actionBar .go {
+	MARGIN-RIGHT: 15px
+}
+
+.actionBar .pagina {
+	MARGIN-LEFT: 7px;
+	WIDTH: 40px
+}
+
+.infoBarStart INPUT {
+	VERTICAL-ALIGN: middle
+}
+
+.infoBarEnd INPUT {
+	VERTICAL-ALIGN: middle
+}
+
+.infoBar INPUT {
+	VERTICAL-ALIGN: middle
+}
+
+.actionBar INPUT {
+	VERTICAL-ALIGN: middle
+}
+
+.infoBarStart SELECT {
+	VERTICAL-ALIGN: middle
+}
+
+.infoBarEnd SELECT {
+	VERTICAL-ALIGN: middle
+}
+
+.infoBar SELECT {
+	VERTICAL-ALIGN: middle
+}
+
+.actionBar SELECT {
+	VERTICAL-ALIGN: middle
+}
+
+.actionSubBarTxt {
+	PADDING-RIGHT: 9px;
+	PADDING-LEFT: 9px;
+	PADDING-BOTTOM: 7px;
+	VERTICAL-ALIGN: top;
+	PADDING-TOP: 7px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.actionSubBarAct {
+	PADDING-RIGHT: 9px;
+	PADDING-LEFT: 9px;
+	PADDING-BOTTOM: 7px;
+	VERTICAL-ALIGN: top;
+	PADDING-TOP: 7px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.actionSubBarAct {
+	WHITE-SPACE: nowrap;
+	TEXT-ALIGN: right
+}
+
+.actionSubBarTxt {
+	WIDTH: 70%
+}
+
+.inputNum3 {
+	WIDTH: 30px
+}
+
+.titleBar {
+	BORDER-RIGHT: medium none;
+	PADDING-RIGHT: 5px;
+	BORDER-TOP: medium none;
+	FONT-WEIGHT: bold;
+	BORDER-LEFT: medium none;
+	COLOR: #ffffff;
+	LINE-HEIGHT: 20px;
+	BORDER-BOTTOM: medium none;
+	BACKGROUND-COLOR: #4cbcd0
+}
+
+.titleBarInner {
+	MARGIN-TOP: 0px;
+	MARGIN-LEFT: 7px
+}
+
+.summaryBox {
+	BORDER-RIGHT: #4cbcd0 1px solid;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: #4cbcd0 0px solid;
+	PADDING-LEFT: 0px;
+	MARGIN-BOTTOM: 15px;
+	PADDING-BOTTOM: 0px;
+	BORDER-LEFT: #4cbcd0 1px solid;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: #4cbcd0 1px solid;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.actionSelect {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 11px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 0px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.actionSelectHL {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 11px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 0px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.actionSelectHL {
+	BACKGROUND-COLOR: #e5f5fa
+}
+
+.btnSmall {
+	FONT-SIZE: 11px
+}
+
+.actionBtn {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px 4px 0px 0px;
+	PADDING-TOP: 0px
+}
+
+.dlgBlock {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	PADDING-BOTTOM: 7px;
+	VERTICAL-ALIGN: baseline;
+	PADDING-TOP: 2px
+}
+
+.dlgDivider {
+	BORDER-TOP: #4cbcd0 1px solid;
+	MARGIN: 7px;
+	VERTICAL-ALIGN: baseline;
+	PADDING-TOP: 2px
+}
+
+.dlgBoxDetails {
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	MARGIN: 0px 0px 5px;
+	BORDER-LEFT: 0px;
+	BORDER-BOTTOM: 0px;
+	BORDER-COLLAPSE: collapse
+}
+
+.dlgFirstRow {
+	PADDING-RIGHT: 9px;
+	PADDING-LEFT: 9px;
+	PADDING-BOTTOM: 9px;
+	PADDING-TOP: 9px;
+	BORDER-BOTTOM: #cdd7d9 1px solid;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.dlgTxt {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	PADDING-BOTTOM: 3px;
+	VERTICAL-ALIGN: top;
+	PADDING-TOP: 2px
+}
+
+.dlgDate {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	PADDING-BOTTOM: 3px;
+	VERTICAL-ALIGN: top;
+	PADDING-TOP: 2px
+}
+
+.dlgRowLabel {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	PADDING-BOTTOM: 3px;
+	VERTICAL-ALIGN: top;
+	PADDING-TOP: 2px
+}
+
+lstTxt {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	PADDING-BOTTOM: 3px;
+	VERTICAL-ALIGN: top;
+	PADDING-TOP: 2px
+}
+
+.summaryBoxTxt .dlgTxt {
+	PADDING-LEFT: 0px
+}
+
+.dlgRowLabel {
+	
+}
+
+.dlgDate {
+	WHITE-SPACE: nowrap
+}
+
+.dlgCol {
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: #4cbcd0 0px solid;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 15px;
+	MARGIN: 0px;
+	VERTICAL-ALIGN: top;
+	PADDING-TOP: 0px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.dlgCol LEGEND {
+	MARGIN-TOP: -5px
+}
+
+.dlgColPreview {
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: #4cbcd0 0px solid;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 15px;
+	MARGIN: 0px;
+	VERTICAL-ALIGN: top;
+	PADDING-TOP: 0px;
+	HEIGHT: 400px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.alertBox {
+	BORDER-RIGHT: #cdd7d9 0px solid;
+	PADDING-RIGHT: 7px;
+	BORDER-TOP: #cdd7d9 0px solid;
+	PADDING-LEFT: 7px;
+	PADDING-BOTTOM: 7px;
+	MARGIN: 0px 0px 9px;
+	BORDER-LEFT: #cdd7d9 0px solid;
+	COLOR: #cc0000;
+	PADDING-TOP: 7px;
+	BORDER-BOTTOM: #cdd7d9 1px solid;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.dlgTipCol {
+	PADDING-RIGHT: 9px;
+	BORDER-TOP: #4cbcd0 0px solid;
+	PADDING-LEFT: 9px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-BOTTOM: 9px;
+	VERTICAL-ALIGN: top;
+	BORDER-LEFT: #4cbcd0 1px solid;
+	WIDTH: 34%;
+	PADDING-TOP: 9px;
+	BORDER-COLLAPSE: collapse;
+	BORDER-RIGHT-WIDTH: 0px
+}
+
+.dlgFormElement {
+	WIDTH: 230px
+}
+
+.summaryBoxItem {
+	MARGIN-BOTTOM: 4px;
+	VERTICAL-ALIGN: top;
+	TEXT-INDENT: -11px
+}
+
+.summaryBoxTxt {
+	MARGIN-BOTTOM: 4px;
+	VERTICAL-ALIGN: top;
+	TEXT-INDENT: -11px
+}
+
+.summaryBoxTxtHeading {
+	MARGIN-BOTTOM: 4px;
+	VERTICAL-ALIGN: top;
+	TEXT-INDENT: -11px
+}
+
+.summaryBoxItem {
+	MARGIN-LEFT: 18px;
+	MARGIN-RIGHT: 8px
+}
+
+.summaryBoxTxt {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	TEXT-INDENT: 0px
+}
+
+.summaryBoxTxtHeading {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	TEXT-INDENT: 0px
+}
+
+.summaryBoxTxtHeading {
+	FONT-WEIGHT: bold
+}
+
+.customiseImg {
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	MARGIN-TOP: 3px;
+	FLOAT: right;
+	MARGIN-LEFT: 6px;
+	BORDER-LEFT: 0px;
+	MARGIN-RIGHT: 0px;
+	BORDER-BOTTOM: 0px
+}
+
+.dlgBox {
+	BORDER-RIGHT: #4cbcd0 1px solid;
+	BORDER-TOP: #4cbcd0 0px solid;
+	MARGIN: 0px;
+	BORDER-LEFT: #4cbcd0 1px solid;
+	WIDTH: 100%;
+	BORDER-BOTTOM: #4cbcd0 1px solid;
+	BORDER-COLLAPSE: collapse
+}
+
+.lstBox {
+	BORDER-RIGHT: #4cbcd0 1px solid;
+	BORDER-TOP: #4cbcd0 1px solid;
+	MARGIN: 0px;
+	BORDER-LEFT: #4cbcd0 1px solid;
+	WIDTH: 100%;
+	BORDER-BOTTOM: #4cbcd0 0px solid;
+	BORDER-COLLAPSE: collapse
+}
+
+.lstBoxBottom {
+	BORDER-RIGHT: #4cbcd0 1px solid;
+	BORDER-TOP: #4cbcd0 1px solid;
+	MARGIN: 0px;
+	BORDER-LEFT: #4cbcd0 1px solid;
+	WIDTH: 100%;
+	BORDER-BOTTOM: #4cbcd0 1px solid
+}
+
+.lstFormCheckbox {
+	MARGIN: 0px
+}
+
+.lstEvRow {
+	BACKGROUND-COLOR: #d2eef3
+}
+
+.lstOddRow {
+	BACKGROUND-COLOR: #ffffff
+}
+
+.schedulesItemHeader {
+	BORDER-RIGHT: #cdd7d9 0px solid;
+	BORDER-TOP: #cdd7d9 1px solid;
+	BORDER-LEFT: #cdd7d9 0px solid;
+	BORDER-BOTTOM: #cdd7d9 0px solid;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.schedulesFirstItemHeader {
+	BORDER-RIGHT: #cdd7d9 0px solid;
+	BORDER-TOP: #cdd7d9 1px solid;
+	BORDER-LEFT: #cdd7d9 0px solid;
+	BORDER-BOTTOM: #cdd7d9 0px solid;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.routeMap {
+	BORDER-RIGHT: #cdd7d9 0px solid;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: #cdd7d9 1px solid;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	BORDER-LEFT: #cdd7d9 0px solid;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: #cdd7d9 0px solid;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.routeMapImg {
+	BORDER-RIGHT: #cdd7d9 1px solid;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: #cdd7d9 0px solid;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	BORDER-LEFT: #cdd7d9 0px solid;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: #cdd7d9 0px solid
+}
+
+.schedulesFirstItemHeader {
+	BORDER-TOP-WIDTH: 0px
+}
+
+.dividerRow {
+	BORDER-TOP: #cdd7d9 1px solid;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.brdTopRow {
+	BORDER-TOP: #cdd7d9 1px solid;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.brdBottomRow {
+	BORDER-BOTTOM: #cdd7d9 1px solid;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.lstRowHL {
+	BACKGROUND-COLOR: #e5f5fa
+}
+
+.lstNow {
+	BORDER-TOP: #66c2e0 2px solid;
+	BORDER-BOTTOM: #66c2e0 2px solid
+}
+
+.lstHeader {
+	FONT-WEIGHT: bold;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.lstDivider {
+	BORDER-TOP: #cdd7d9 1px solid;
+	FONT-WEIGHT: bold;
+	BORDER-BOTTOM-WIDTH: 0px;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.lstFirstRow {
+	BORDER-TOP-WIDTH: 1px;
+	BORDER-COLLAPSE: collapse
+}
+
+.lstTxt {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	LINE-HEIGHT: 18px
+}
+
+.lstSum {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	LINE-HEIGHT: 18px
+}
+
+.lstColLabel {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	LINE-HEIGHT: 18px
+}
+
+.lstColLabelSub {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	LINE-HEIGHT: 18px
+}
+
+.lstColLabelSort {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	LINE-HEIGHT: 18px
+}
+
+.lstRowLabel {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	LINE-HEIGHT: 18px
+}
+
+.lstDate {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	LINE-HEIGHT: 18px
+}
+
+.lstHeader {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	LINE-HEIGHT: 18px
+}
+
+.schedulesItemHeader {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	LINE-HEIGHT: 18px
+}
+
+.schedulesFirstItemHeader {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	LINE-HEIGHT: 18px
+}
+
+.infoBar .lstTxt {
+	LINE-HEIGHT: 14px
+}
+
+.infoBar .lstDate {
+	LINE-HEIGHT: 14px
+}
+
+.lstSum {
+	BORDER-TOP: #cdd7d9 1px solid
+}
+
+.lstDate {
+	WHITE-SPACE: nowrap
+}
+
+.lstColLabel {
+	BORDER-RIGHT: #ffffff 1px solid;
+	BORDER-TOP: #4cbcd0 0px solid;
+	PADDING-BOTTOM: 0px;
+	VERTICAL-ALIGN: middle;
+	BORDER-LEFT: 0px solid;
+	CURSOR: pointer;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: #4cbcd0 1px solid;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #d2eef3
+}
+
+.lstColLabelSort {
+	BORDER-RIGHT: #ffffff 1px solid;
+	BORDER-TOP: #4cbcd0 0px solid;
+	PADDING-BOTTOM: 0px;
+	VERTICAL-ALIGN: middle;
+	BORDER-LEFT: 0px solid;
+	CURSOR: pointer;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: #4cbcd0 1px solid;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #d2eef3
+}
+
+.lstColLabelSub {
+	BORDER-RIGHT: #ffffff 1px solid;
+	BORDER-TOP: #4cbcd0 0px solid;
+	PADDING-BOTTOM: 0px;
+	VERTICAL-ALIGN: middle;
+	BORDER-LEFT: 0px solid;
+	CURSOR: pointer;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: #4cbcd0 1px solid;
+	BORDER-COLLAPSE: collapse;
+	BACKGROUND-COLOR: #d2eef3
+}
+
+.lstColLabel {
+	CURSOR: default
+}
+
+.lstColLabelSub {
+	CURSOR: default
+}
+
+.lstColLabelSub {
+	BORDER-TOP-WIDTH: 2px;
+	BORDER-TOP-COLOR: #6a868d
+}
+
+.lstCtrl {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 2px;
+	WIDTH: 17px
+}
+
+.sortArrow {
+	MARGIN-TOP: 2px;
+	MARGIN-LEFT: 4px;
+	VERTICAL-ALIGN: baseline
+}
+
+.lstNumeric {
+	TEXT-ALIGN: right
+}
+
+.dtGridTDExample {
+	BORDER-RIGHT: #000000 1px dashed;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: #000000 1px dashed;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	BORDER-LEFT: #000000 1px dashed;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: #000000 1px dashed;
+	TEXT-ALIGN: center
+}
+
+.dtGridExample {
+	PADDING-RIGHT: 0px;
+	MARGIN-TOP: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	WIDTH: 60px;
+	MARGIN-RIGHT: 10px;
+	PADDING-TOP: 0px;
+	BORDER-COLLAPSE: collapse;
+	HEIGHT: 60px
+}
+
+.cbxList {
+	BORDER-RIGHT: 2px inset;
+	BORDER-TOP: 2px inset;
+	OVERFLOW: auto;
+	BORDER-LEFT: 2px inset;
+	WIDTH: 250px;
+	LINE-HEIGHT: 18px;
+	BORDER-BOTTOM: 2px inset;
+	WHITE-SPACE: nowrap;
+	HEIGHT: 70px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.ctrlMulti {
+	WHITE-SPACE: nowrap
+}
+
+.legalNoticeBox {
+	BORDER-RIGHT: #cdd7d9 1px solid;
+	PADDING-RIGHT: 6px;
+	BORDER-TOP: #cdd7d9 1px solid;
+	PADDING-LEFT: 6px;
+	PADDING-BOTTOM: 6px;
+	OVERFLOW: auto;
+	BORDER-LEFT: #cdd7d9 1px solid;
+	PADDING-TOP: 6px;
+	BORDER-BOTTOM: #cdd7d9 1px solid;
+	HEIGHT: 150px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.dlgCtrlWide {
+	WIDTH: 96%
+}
+
+TABLE.tblBLDetails {
+	BORDER-RIGHT: #cdd7d9 1px solid;
+	BORDER-TOP: #cdd7d9 1px solid;
+	MARGIN: 0px;
+	BORDER-LEFT: #cdd7d9 1px solid;
+	WIDTH: 100%;
+	BORDER-COLLAPSE: collapse;
+	border-spacing: 0px
+}
+
+TABLE.tblBLDetails TD {
+	BORDER-RIGHT: #cdd7d9 1px solid;
+	BORDER-TOP: #cdd7d9 1px solid;
+	MARGIN: 0px;
+	BORDER-LEFT: #cdd7d9 1px solid;
+	WIDTH: 100%;
+	BORDER-COLLAPSE: collapse;
+	border-spacing: 0px
+}
+
+TABLE.tblBLDetails TD {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 5px;
+	PADDING-TOP: 5px
+}
+
+TABLE.tblBLDetails H2 {
+	FONT-WEIGHT: normal;
+	COLOR: #6a868d
+}
+
+TABLE.last {
+	BORDER-BOTTOM: #cdd7d9 1px solid
+}
+
+TR.list TD {
+	WHITE-SPACE: nowrap
+}
+
+TABLE.two TD {
+	WIDTH: 50%
+}
+
+TABLE.three TD {
+	WIDTH: 33%
+}
+
+TABLE.four TD {
+	WIDTH: 25%
+}
+
+TD.two {
+	WIDTH: 50%
+}
+
+.actionSubBarTxt {
+	WIDTH: 70%
+}
+
+.actionGroupSelect {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 0px;
+	TEXT-ALIGN: right
+}
+
+.actionGroupIcons {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 0px;
+	TEXT-ALIGN: right
+}
+
+.actionGroup {
+	BORDER-RIGHT: 0px;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	PADDING-LEFT: 0px;
+	FLOAT: right;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	BORDER-LEFT: 0px;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: 0px
+}

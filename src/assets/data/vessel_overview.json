@@ -1,0 +1,36 @@
+[
+	{
+		"status": "assets/images/0Bill.gif",
+		"load_port": "DEBRVTM",
+		"load_date": "2015-11-02",
+		"vessel_voyage": "J49/1523",
+		"vessel_name": "A LA MARINE",
+		"all_due": "11",
+		"due_dmr": "0",
+		"due_dts": "0",
+		"open_bills": "0"
+	},
+	{
+		"status": "assets/images/0Bill.gif",
+		"load_port": "DEBRVTM",
+		"load_date": "2014-11-19",
+		"vessel_voyage": "257/144E",
+		"vessel_name": "A.P. MOLLER",
+		"all_due": "48",
+		"due_dmr": "4",
+		"due_dts": "27",
+		"open_bills": "0"
+	},
+	{
+		"status": "assets/images/0Bill.gif",
+		"load_port": "DEHAMBK",
+		"load_date": "2015-03-26",
+		"vessel_voyage": "B2R/1603",
+		"vessel_name": "ADELHEID-S",
+		"all_due": "2",
+		"due_dmr": "0",
+		"due_dts": "0",
+		"open_bills": "0"
+	}
+	
+]

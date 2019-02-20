@@ -1,0 +1,380 @@
+/**************************************************/
+/* Generic elements and Directions */
+/**************************************************/
+body {
+	background-color: #FFFFFF;
+	margin: 1px;
+	margin-right: 0px;
+	padding: 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.tblFullWidth {
+	width: 98%;
+	min-width: 772px;
+	max-width: 1100px;
+	width: expression(document.body.offsetWidth > 1100 ? "1100px" : (
+		document.body.offsetWidth < 772 ? "772px" : "100%"));
+	border-width: 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+.inner_table {
+	border-color: #49bdd2;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+}
+
+.outer_table {
+	text-align: center;
+}
+
+.CreateStandardTariffInnerTable {
+	border-color: #49bdd2;
+	border-bottom-width: 1px;
+	text-align: center;
+}
+
+.inner_table_padding {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.inner_result_table {
+	text-align: center;
+	display: table-column;
+	border: 1px solid #5b919a;
+}
+
+.Result_top_box {
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	color: #000000;
+	height: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #a1dbe6;
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #5b919a;
+}
+
+.Result_bottom_box {
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	color: #000000;
+	height: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #a1dbe6;
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+}
+
+.Result_odd_lines {
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	color: #000000;
+	height: 25px;
+	text-decoration: none;
+	font-weight: normal;
+	background-color: #f6fbfc;
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #5b919a;
+}
+
+.Result_even_lines {
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	color: #000000;
+	height: 25px;
+	text-decoration: none;
+	font-weight: normal;
+	background-color: #d4eef3;
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #5b919a;
+}
+
+.input_top {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 20px;
+}
+
+.toplinks {
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	color: #FFFFFF;
+	height: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #49bdd2;
+	text-align: left;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+}
+
+.queryLinks {
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	color: #FFFFFF;
+	height: 8px;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #49bdd2;
+	text-align: left;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+}
+
+.toplinks1 {
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	height: 15px;
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+}
+
+.input_text_main {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #256d7a;
+	text-decoration: none;
+	height: 20px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.input_text_job_admin {
+	color: #FFFFFF;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-decoration: none;
+	height: 20px;
+	text-align: left;
+	vertical-align: middle;
+	background-color: #49bdd2;
+	text-align: Center;
+	vertical-align: middle;
+}
+
+.input_text_blank_row {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #256d7a;
+	text-decoration: none;
+	height: 7px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+/**************************************************/
+/* Added by shariq for RQ: 9995*/
+/**************************************************/
+.input_text_msg_row {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #000000;
+	text-decoration: none;
+	height: 10px;
+	text-align: left;
+	vertical-align: middle;
+	margin: 1px;
+	padding: 1px;
+}
+
+.input_text_error_row {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #ff0000;
+	text-decoration: none;
+	text-align: left;
+	vertical-align: middle;
+	margin: 1px;
+	padding: 1px;
+}
+
+.actionMessage {
+	margin: 1px;
+	padding: 1px;
+}
+
+.actionError {
+	margin: 1px;
+	padding: 1px;
+}
+
+.input_text_result {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000000;
+	text-decoration: none;
+	height: 20px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.btnArea {
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	color: #FFFFFF;
+	height: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #49bdd2;
+	padding-right: 15px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+}
+
+.result_header {
+	font-size: 10px;
+	font-style: normal;
+	font-variant: normal;
+	color: #FFFFFF;
+	height: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #49bdd2;
+	padding-right: 15px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+}
+
+.txtFld {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #545454;
+	width: 120px;
+	border-color: #d0d0d0;
+	border-width: 1px;
+	border-style: solid;
+	text-decoration: none;
+}
+
+.buttons {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333;
+	width: 60px;
+	text-decoration: none;
+}
+
+.buttonExport {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333;
+	width: 105px;
+	text-decoration: none;
+}
+
+.buttonHideResponse {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333;
+	width: 160px;
+	text-decoration: none;
+}
+
+.errorMsg {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #ff0000;
+	text-decoration: none;
+	height: 25px;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 5px;
+}
+
+.inputtypebutton {
+	border: 1px solid #99999;
+	background-color: #99CCDD;
+	font-family: verdana;
+	font-size: 9pt;
+}
+
+.rowText {
+	border: 1px solid #99999;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+}
+
+.select {
+	border: 1px solid #99999;
+	font-family: verdana;
+	font-size: 8pt;
+}
+
+.imageSize {
+	height: 460px;
+	width: 700px;
+}
+
+/* Start page specific Ends */
+/**************************************************/

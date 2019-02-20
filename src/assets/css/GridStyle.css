@@ -1,0 +1,106 @@
+.gridTable {
+	border: #4EBCD0 1px solid;
+	background-color: #288899;
+}
+
+.gridHeader {
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: #4EBCD0;
+	height: 24px;
+}
+
+.gridRowEven {
+	background-color: #B0E2EA;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 8pt;
+	font-weight: normal;
+	height: 20px
+}
+
+.gridRowOdd {
+	background-color: #FFFFFF;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 8pt;
+	font-weight: normal;
+	height: 20px
+}
+
+.gridPageOfPage {
+	color: #ffffff;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 8pt;
+	font-weight: bold
+}
+
+.gridPager {
+	background-color: #4EBCD0;
+}
+
+.gridSort {
+	background-color: #000000;
+	text-decoration: none;
+}
+
+.comboTable {
+	border: #4EBCD0 1px solid;
+	background-color: #c2E9EF;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 10pt;
+	font-weight: bold
+}
+
+.headerTable {
+	background-color: #CDECF1;
+	border: #4EBCD0 1px solid;
+}
+
+.summaryTable {
+	background-color: #B0E2EA;
+	border: #4EBCD0 1px solid;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 10pt;
+	font-weight: bold
+}
+
+.summaryTable select {
+	color: #006699;
+}
+
+.reportTableOption {
+	background-color: #4EBCD0;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 8pt;
+	font-weight: normal;
+	height: 20px
+}
+
+.reportTableData {
+	background-color: #FFFFFF;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 8pt;
+	font-weight: normal;
+	height: 20px
+}
+
+.reportTableData1 {
+	background-color: #B0E2EA;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 8pt;
+	font-weight: normal;
+	height: 20px
+}
+
+.reportTable {
+	border: #4EBCD0 1px solid;
+	background-color: #288899;
+}
+
+.normalActive {
+	background-color: #9abcd9;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 8pt;
+	font-weight: normal;
+	height: 20px
+}

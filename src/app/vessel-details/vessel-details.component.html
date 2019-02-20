@@ -1,0 +1,260 @@
+<app-header></app-header>
+<p>&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"
+		class="outer_table" >
+		<tr><td align="center">
+
+<table width="97%" border="0" cellpadding="0" cellspacing="0"
+	class="inner_table">
+	<tr>
+		<td colspan="11" align="left" class="toplinks"><label id="vesselDetail_label_header1">Vessel:</label>J49/1523
+		&nbsp; A LA MARINE &nbsp;&nbsp;  <label id="vesselDetail_label_header2">Load port:</label>DEBRVTM &nbsp;&nbsp;  Demurrage based on Load Date: <label></label>2015-11-02 :00.0
+		</td>
+		
+	</tr>
+
+	<tr class="input_text_blank_row">
+		<td width="20" align="left" class="input_text_blank_row">&nbsp;</td>
+		<td width="313" colspan="3" align="left" class="input_text_error_row">&nbsp;</td>
+		<td width="531" colspan="7" align="left" class="input_text_blank_row">&nbsp;</td>
+	</tr>
+	<tr><td colspan="11"><p></p></td></tr>
+	<tr>
+		<td height="57" colspan="11" align="left" class="input_text_main">
+		<form id="populateVesselDetails" name="frmMain" action="/EddiWeb/populateVesselDetails.action" method="post">
+			<table width="95%" border="0" align="center" cellpadding="0"
+				cellspacing="0" class="inner_table">
+				<tr class="input_text_job_admin">
+					<td height="35" class="input_text_job_admin">
+            <label id="populateVesselDetails_vesselDetail_label_billingStatus">Billing Status</label></td>
+					<td>
+					<p>&nbsp;</p>
+					</td>
+					<td><label id="populateVesselDetails_vesselDetail_label_containerSize">Contr. Size</label></td>
+					<td>&nbsp;</td>
+					<td><label id="populateVesselDetails_vesselDetail_label_operator">Operator</label></td>
+					<td>&nbsp;</td>
+					<td><label id="populateVesselDetails_vesselDetail_label_boookingOffice">Booking Office</label></td>
+					<td>&nbsp;</td>
+					<td><label id="populateVesselDetails_vesselDetail_label_boookingTeam">Booking Team</label></td>
+					<td>&nbsp;</td>
+					<td><label id="populateVesselDetails_vesselDetail_label_mode">Rec. Mode</label></td>
+					<td>&nbsp;</td>
+					<td><label id="populateVesselDetails_vesselDetail_label_tariff">Tariff</label></td>
+					<td>&nbsp;</td>
+					<td><label id="populateVesselDetails_vesselDetail_label_contractualCust">Contractual Customer</label></td>
+					<td>&nbsp;</td>
+					<td><label id="populateVesselDetails_vesselDetail_label_dueType">Due Type</label></td>
+				</tr>
+				<tr class="input_text_job_admin">
+					<td width="13%" height="35" class="input_text_job_admin"><select name="billingStatusFilter" id="billingStatusFilter" class="select" style="WIDTH:130px" onchange="onFilterChange();">
+    <option value="All Bills" selected="selected">All Bills</option>
+    <option value="Unhandled Bills Only">Unhandled Bills Only</option>
+    <option value="Incompleted Bills Only">Incompleted Bills Only</option>
+    <option value="Completed Bills Only">Completed Bills Only</option>
+</select>
+
+</td>
+					<td width="1%">&nbsp;</td>
+					<td width="12%"><select name="contrsizeFilter" id="contrsizeFilter" class="select" style="WIDTH:80px" onchange="onFilterChange();">
+    <option value="All Containers" selected="selected">All Containers</option>
+    <option value="20ft only">20ft only</option>
+    <option value="40ft only">40ft only</option>
+    <option value="45ft only">45ft only</option>
+    <option value="excl. 20ft">excl. 20ft</option>
+    <option value="excl. 40ft">excl. 40ft</option>
+    <option value="excl. 45ft">excl. 45ft</option>
+</select>
+
+</td>
+					<td width="1%">&nbsp;</td>
+					<td width="12%"><select name="operatorFilter" id="operatorFilter" class="select" style="WIDTH:80px" onchange="onFilterChange();">
+    <option value="ALL"
+    >ALL</option>
+    <option value="1">MSL</option>
+    <option value="2">SCL</option>
+    <option value="7">SEA</option>
+    <option value="6">SGL</option>
+</select>
+
+</td>
+					<td width="1%">&nbsp;</td>
+					<td width="11%"><select name="officeFilter" id="officeFilter" class="select" style="WIDTH:70px" onchange="onFilterChange();">
+    <option value=" All" selected="selected"> All</option>
+    <option value="ATVIESGL1">ATVIESGL1</option>
+    <option value="DEHAMSGL1">DEHAMSGL1</option>
+    <option value="HUBUDSGL1">HUBUDSGL1</option>
+</select>
+
+</td>
+					<td width="1%">&nbsp;</td>
+					<td width="11%"><select name="teamFilter" id="teamFilter" class="select" style="WIDTH:80px" onchange="onFilterChange();">
+    <option value=" All" selected="selected"> All</option>
+    <option value="DECCLUSTER">DECCLUSTER</option>
+    <option value="HUBOOKING">HUBOOKING</option>
+</select>
+
+</td>
+					<td width="1%">&nbsp;</td>
+					<td width="10%"><select name="recmodeFilter" id="recmodeFilter" class="select" style="WIDTH:60px" onchange="onFilterChange();">
+    <option value=" All" selected="selected"> All</option>
+    <option value="CY only">CY only</option>
+    <option value="SD only">SD only</option>
+    <option value="Excl. CY">Excl. CY</option>
+    <option value="Excl. SD">Excl. SD</option>
+</select>
+
+</td>
+					<td width="1%">&nbsp;</td>
+					<td width="10%"><select name="tariffFilter" id="tariffFilter" class="select" style="WIDTH:70px" onchange="onFilterChange();">
+    <option value=" All" selected="selected"> All</option>
+    <option value="DRY only">DRY only</option>
+    <option value="IMO only">IMO only</option>
+    <option value="REEF only">REEF only</option>
+    <option value="Excl. DRY">Excl. DRY</option>
+    <option value="Excl. IMO">Excl. IMO</option>
+    <option value="Excl. REEF">Excl. REEF</option>
+</select>
+
+</td>
+					<td width="1%">&nbsp;</td>
+					<td width="13%"><select name="contractualcustomerFilter" id="contractualcustomerFilter" class="select" style="WIDTH:110px" onchange="onFilterChange();">
+    <option value=" All" selected="selected"> All</option>
+    <option value="CEVA FREIGHT GERMANY GMBH">CEVA FREIGHT GERMANY GMBH</option>
+    <option value="DHL GLOBAL FORWARDING GMBH">DHL GLOBAL FORWARDING GMBH</option>
+    <option value="EVONIK INDUSTRIES AG">EVONIK INDUSTRIES AG</option>
+    <option value="LOGWIN AIR + OCEAN AUSTRIA GMBH">LOGWIN AIR + OCEAN AUSTRIA GMBH</option>
+    <option value="MFP MICHELIN">MFP MICHELIN</option>
+    <option value="RAABERLOG KFT">RAABERLOG KFT</option>
+</select>
+
+</td>
+					<td width="1%">&nbsp;</td>
+					<td width="13%"><select name="dueTypeFilter" id="dueTypeFilter" class="select" style="WIDTH:112px" onchange="onFilterChange();">
+    <option value="All Due Containers" selected="selected">All Due Containers</option>
+    <option value="All Due Demurrage">All Due Demurrage</option>
+    <option value="All Due Detention">All Due Detention</option>
+</select>
+
+</td>
+				</tr>
+				<tr>
+					<td colspan="20">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="20">
+<!-- <html>
+<head> -->
+
+<!-- <link REL="StyleSheet" HREF="css/GridStyle.css">
+<script type="text/javascript" src="./scripts/prototype.js"></script>
+<script type="text/javascript" src="./scripts/lightbox.js"></script>
+<script type="text/javascript" src="./scripts/eddi2.js"></script>
+<link rel="stylesheet" href="./css/lightbox.css"
+	media="screen,projection" type="text/css" />
+
+</head> -->
+<!-- <body> -->
+<table CLASS="gridTable" WIDTH="100%" CELLSPACING=1 CELLPADDING=2 ID="tblStat" NAME="tblStat">
+
+<tr CLASS="gridHeader">
+<td WIDTH="5%" CLASS="gridHeader" ALIGN="center">Action</td>
+<td WIDTH="10%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('container', 'DESC')" CLASS="gridSort"><span>Container&nbsp;<img SRC="../../assets/images/ImgAsc.gif" BORDER=0 ALIGN="absmiddle"></span></a></td>
+<td WIDTH="4%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('containerSizeType', 'ASC')" CLASS="gridSort">Sz./Type</a></td>
+<td WIDTH="5%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('operator', 'ASC')" CLASS="gridSort">Operator</a></td>
+<td WIDTH="9%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('bookingNumber', 'ASC')" CLASS="gridSort">Shipment</a></td>
+<td WIDTH="9%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('bookingOffice', 'ASC')" CLASS="gridSort">Office</a></td>
+<td WIDTH="9%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('bookingTeam', 'ASC')" CLASS="gridSort">Team</a></td>
+<td WIDTH="6%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('bookingUser', 'ASC')" CLASS="gridSort">User</a></td>
+<td WIDTH="6%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('receipt', 'ASC')" CLASS="gridSort">Receipt</a></td>
+<td WIDTH="6%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('confirmLoadDate', 'ASC')" CLASS="gridSort">In-date</a></td>
+<td WIDTH="3%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('receivedMode', 'ASC')" CLASS="gridSort">Mode</a></td>
+<td WIDTH="4%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('tariff', 'ASC')" CLASS="gridSort">Tariff</a></td>
+<td WIDTH="13%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('customeName', 'ASC')" CLASS="gridSort">Customer name</a></td>
+<td WIDTH="7%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('serviceContract', 'ASC')" CLASS="gridSort">SVC-No</a></td>
+<td WIDTH="5%" CLASS="gridHeader" ALIGN="right"><a HREF="javascript:doSort('dtsDueAmt', 'ASC')" CLASS="gridSort">EUR(Dts)</a></td>
+<td WIDTH="5%" CLASS="gridHeader" ALIGN="right"><a HREF="javascript:doSort('dmrDueAmount', 'ASC')" CLASS="gridSort">EUR(Dmr)</a></td>
+</tr>
+<tr CLASS="gridRowOdd" *ngFor="let vdd of vesselDetailsData">
+<td WIDTH="5%" CLASS="gridColumn" ALIGN="center"><a HREF="javascript:openBillDetails()"><img SRC="../../assets/images/Finalized.gif" WIDTH=16 HEIGHT=16 ALTER="null"></a></td>
+<td WIDTH="10%" CLASS="gridColumn" ALIGN="center">{{vdd.EQPT_ID}}</td>
+<td WIDTH="4%" CLASS="gridColumn" ALIGN="center">{{vdd.CONTAINER_SIZE}}&nbsp;{{vdd.CONTAINER_TYPE}}</td>
+<td WIDTH="5%" CLASS="gridColumn" ALIGN="center">{{vdd.OPERATOR_NAME}}</td>
+<td WIDTH="9%" CLASS="gridColumn" ALIGN="center">{{vdd.BOOKING_NO}}</td>
+<td WIDTH="9%" CLASS="gridColumn" ALIGN="center">OFFICE</td>
+<td WIDTH="9%" CLASS="gridColumn" ALIGN="center">TEAM</td>
+<td WIDTH="6%" CLASS="gridColumn" ALIGN="center">{{vdd.ALL_DUE}}</td>
+<td WIDTH="6%" CLASS="gridColumn" ALIGN="center">{{vdd.RECEIPT_LOCATION}}</td>
+<td WIDTH="6%" CLASS="gridColumn" ALIGN="center">{{vdd.CREATED_DATE}}</td>
+<td WIDTH="3%" CLASS="gridColumn" ALIGN="center">{{vdd.RECEIPT_SERVICE}}</td>
+<td WIDTH="4%" CLASS="gridColumn" ALIGN="center">{{vdd.CONTAINER_TYPE}}</td>
+<td WIDTH="13%" CLASS="gridColumn" ALIGN="center">CUSTOMER</td>
+<td WIDTH="7%" CLASS="gridColumn" ALIGN="center">SCV NUMBER</td>
+<td WIDTH="5%" CLASS="gridColumn" ALIGN="right">0</td>
+<td WIDTH="5%" CLASS="gridColumn" ALIGN="right">0</td>
+</tr>
+<!-- <tr>
+<td COLSPAN=16>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+<tr CLASS="gridPager">
+<td ALIGN="left" WIDTH="70%">
+  &nbsp;
+<a HREF="javascript:doNavigate('F', 2)">
+<img SRC="images/First.gif" BORDER=0></a>
+<a HREF="javascript:doNavigate('P', 2)">
+<img SRC="images/Previous.gif" BORDER=0></a>
+<a HREF="javascript:doNavigate('N', 2)">
+<img SRC="images/Next.gif" BORDER=0></a>
+<a HREF="javascript:doNavigate('L', 2)">
+<img SRC="images/Last.gif" BORDER=0></a>
+</td>
+<td ALIGN="right" WIDTH="30%" CLASS="gridPageOfPage">&nbsp;
+Page 1 of 2</td>
+</tr>
+</table>
+
+</td>
+</tr> -->
+</table>
+
+<input TYPE="hidden" NAME="txtCurr" id="txtCurr" VALUE="1">
+<input TYPE="hidden" NAME="txtSortCol" id="txtSortCol" VALUE="container">
+<input TYPE="hidden" NAME="txtSortAsc" id="txtSortAsc"  VALUE="ASC">
+
+<!-- </body>
+</html> -->
+
+</td>
+				</tr>
+			</table>
+			<p>&nbsp;</p>
+			<input TYPE="hidden" id="LPt" NAME="LPt" VALUE="DEBRVTM">
+			<input TYPE="hidden" id="VVe" NAME="VVe" VALUE="J49/1523">
+			<input TYPE="hidden" id="vdDTe" NAME="vdDTe" VALUE="null">
+			<input TYPE="hidden" id="vdSTe" NAME="vdSTe" VALUE="null">
+			<input TYPE="hidden" id="vsDSe" NAME="vsDSe" VALUE="1000">
+			<input TYPE="hidden" id="loadingDate" NAME="loadingDate"
+				VALUE="2015-11-02 00:00:00.0">
+			<input TYPE="hidden" id="vsslName" NAME="vsslName"
+				VALUE="A LA MARINE">
+				<input type="hidden" name="completionStatusFilter" value="Show All Vessels" id="populateVesselDetails_completionStatusFilter"/>
+				<input type="hidden" name="loadPortFilter" value=" All Ports" id="populateVesselDetails_loadPortFilter"/>
+				<input type="hidden" name="vslVygFltr" value=" All Vessels" id="populateVesselDetails_vslVygFltr"/>
+				<input type="hidden" name="bookingOfficeFilter" value=" All Offices" id="populateVesselDetails_bookingOfficeFilter"/>
+				<input type="hidden" name="bookingTeamFilter" value=" All Teams" id="populateVesselDetails_bookingTeamFilter"/>
+				<input type="hidden" name="departureStatusFilter" value="All Past Departures" id="populateVesselDetails_departureStatusFilter"/>
+				<input type="hidden" name="textCurr" value="1" id="populateVesselDetails_textCurr"/>
+		</form>
+</td>
+	</tr>
+	<tr>
+		<td height="25" colspan="11" align="right" valign="middle"
+			class="btnArea"><input name="return" type="submit"
+			id="return" value="Return" class="buttons"
+			onclick="openBillDetails();" /><!-- &nbsp;
+		<input name="exportToExcel" type="submit" class="buttonExport"
+			id="exportToExcel" value="Export to Excel"
+			onclick="exportVesselDetail()" /> &nbsp;&nbsp; --></td>
+	</tr>
+</table>
+</td></tr></table>

@@ -1,0 +1,193 @@
+<div>
+    <app-header (changed)="onChanged($event)"></app-header>
+<p>&nbsp;</p>
+    <form id="populateVesselSummary" name="frmMain" action="/EddiWeb/populateVesselSummary.action" method="post">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0"
+          class="outer_table" >
+          <tr><td align="center">
+        <table width="97%" border="0" cellpadding="0" cellspacing="0"
+          class="inner_table">
+          <tr>
+            <td colspan="11" align="left" class="toplinks"><label id="populateVesselSummary_vesselOverview_label_header1">Vessel Overview for Load Country  </label>&nbsp;&nbsp;IN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="populateVesselSummary_vesselOverview_label_header2">there are currently these due shipments:</label></td>
+          </tr>
+          <tr class="input_text_blank_row">
+            <td width="20" align="left" class="input_text_blank_row">&nbsp;</td>
+            <td width="313" colspan="3" align="left" class="input_text_error_row">&nbsp;</td>
+            <td width="531" colspan="7" align="left" class="input_text_blank_row">&nbsp;</td>
+          </tr>
+          <tr><td colspan="11"><p></p></td></tr>
+          <tr>
+            <td colspan="11" align="left" class="input_text_main">
+            <table width="95%" border="0" align="center" cellpadding="0"
+              cellspacing="0" class="inner_table">
+              <tr class="input_text_job_admin">
+                <td class="input_text_job_admin"><label id="populateVesselSummary_vesselOverview_label_vesselVoyage">Vessel/Voyage</label></td>
+                <td>&nbsp;</td>
+                <td><label id="populateVesselSummary_vesselOverview_label_completionStatus">Completion Status</label></td>
+                <td>&nbsp;</td>
+                <td><label id="populateVesselSummary_vesselOverview_label_loadPort">Load Port</label></td>
+                <td>&nbsp;</td>
+                <td><label id="populateVesselSummary_vesselOverview_label_bookingOffice">Booking Office</label></td>
+                <td>&nbsp;</td>
+                <td><label id="populateVesselSummary_vesselOverview_label_bookingTeam">Booking Team</label></td>
+                <td colspan="6">&nbsp;</td>
+                <td><label id="populateVesselSummary_vesselOverview_label_departureStatus">Departure Status</label></td>
+              </tr>
+              <tr class="input_text_job_admin">
+                <td width="11%" class="input_text_job_admin"><select name="vslVygFltr" id="vslVygFltr" onchange="onFilterChange();">
+          <option value=" All Vessels" selected="selected"> All Vessels</option>
+      
+      
+      </select>
+      
+      </td>
+                <td width="4%">&nbsp;</td>
+                <td width="13%" class="input_text_job_admin"><select name="completionStatusFilter" id="completionStatusFilter" onchange="onFilterChange();">
+          <option value="Show All Vessels" selected="selected">Show All Vessels</option>
+          <option value="Incomplete Only">Incomplete Only</option>
+          <option value="Completed Only">Completed Only</option>
+      
+      
+      </select>
+      
+      </td>
+                <td width="3%">&nbsp;</td>
+                <td width="11%"><select name="loadPortFilter" id="loadPortFilter" onchange="onFilterChange();">
+          <option value=" All Ports" selected="selected"> All Ports</option>
+      
+      
+      </select>
+      
+      </td>
+                <td width="3%">&nbsp;</td>
+                <td width="12%"><select name="bookingOfficeFilter" id="bookingOfficeFilter" onchange="onFilterChange();">
+          <option value=" All Offices" selected="selected"> All Offices</option>
+      
+      
+      </select>
+      
+      </td>
+                <td width="3%">&nbsp;</td>
+                <td width="14%"><select name="bookingTeamFilter" id="bookingTeamFilter" onchange="onFilterChange();">
+          <option value=" All Teams" selected="selected"> All Teams</option>
+      
+      
+      </select>
+      
+      </td>
+                <td colspan="6">&nbsp;</td>
+                <td width="16%"><select name="departureStatusFilter" id="departureStatusFilter" onchange="onFilterChange();">
+          <option value="Departures of the last 7 days" selected="selected">Departures of the last 7 days</option>
+          <option value="Departures of the last 30 days">Departures of the last 30 days</option>
+          <option value="Departures of the last 60 days">Departures of the last 60 days</option>
+          <option value="Departures of the last 90 days">Departures of the last 90 days</option>
+          <option value="All Past Departures">All Past Departures</option>
+      
+      
+      </select>
+      
+      </td>
+              </tr>
+      
+              <tr>
+                <td colspan="16">&nbsp;</td>
+              </tr>
+              <tr>
+      
+                <td colspan="16">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <html>
+      <head>
+      
+      <link REL="StyleSheet" HREF="css/GridStyle.css">
+      <script type="text/javascript" src="./js/eddi2.js"></script>
+      </head>
+      <body>
+      
+      
+        
+        
+      
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+      <table CLASS="gridTable" WIDTH="100%" CELLSPACING=1 CELLPADDING=2 ID="tblStat" NAME="tblStat">
+      
+      <tr CLASS="gridHeader">
+      <td WIDTH="5%" CLASS="gridHeader" ALIGN="center">Status</td>
+      <td WIDTH="10%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('loadPortCode', 'ASC')" CLASS="gridSort">Load Port</a>
+      </td>
+      <td WIDTH="10%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('loadDate', 'ASC')" CLASS="gridSort">Load Date</a></td>
+      <td WIDTH="10%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('vesselCode', 'ASC')" CLASS="gridSort">Vessel/Voyage</a></td>
+      <td WIDTH="10%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('vesselName', 'DESC')" CLASS="gridSort"><span>Vessel Name&nbsp;<img SRC="../assets/images/ImgAsc.gif" BORDER=0 ALIGN="absmiddle"></span></a></td>
+      <td WIDTH="10%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('allDues', 'ASC')" CLASS="gridSort">All Due</a></td>
+      <td WIDTH="10%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('dueDmr', 'ASC')" CLASS="gridSort">Due DMR</a></td>
+      <td WIDTH="10%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('dueDts', 'ASC')" CLASS="gridSort">Due DTS</a></td>
+      <td WIDTH="10%" CLASS="gridHeader" ALIGN="center"><a HREF="javascript:doSort('openBills', 'ASC')" CLASS="gridSort">Open Bills</a></td>
+    </tr> 
+      <tr CLASS="gridRowOdd" *ngFor="let vd of vesselData; let i=index;">
+      <td align=center><img src="../../assets/images/0Bill.gif"></td>
+      <td align=center>{{vd.LOAD_PORT}}</td>
+      <td align=center>{{vd.LOAD_DATE}}</td>
+      <td align=center>{{vd.VESSEL_CODE}}/{{vd.VOYAGE_NUMBER}}</td>
+      <td align=center>A LA MARINE</td>
+      <td align=center><a routerLink="/vessel-details">{{vd.ALL_DUE}}</a></td>
+      <td align=center>10</td>
+      <td align=center>7</td>
+      <td align=center>5</td>
+      </tr>
+      </table>
+      
+      <input TYPE="hidden" NAME="txtCurr" id="txtCurr" VALUE="1">
+      <input TYPE="hidden" NAME="txtSortCol" id="txtSortCol" VALUE="vesselName">
+      <input TYPE="hidden" NAME="txtSortAsc" id="txtSortAsc" VALUE="ASC">
+      
+      </body>
+      </html>
+      
+      
+      
+                </td>
+              </tr>
+      
+            </table>
+            <p>&nbsp;</p>
+            </td>
+          </tr>
+          <tr>
+            <td height="44" colspan="11" align="right" valign="middle"
+              class="btnArea">&nbsp;&nbsp;</td>
+          </tr>
+        </table>
+        <table width="97%" border="0" cellpadding="0" cellspacing="0"
+          class="inner_table">
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+        </td></tr>
+        </table>
+      </form>
+      
+      
+</div>

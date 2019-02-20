@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+@import url("assets/css/calendar.css");
+@import url("assets/css/global.css");
+@import url("assets/css/GridStyle.css");
+@import url("assets/css/lightbox.css");
+@import url("assets/css/m_global.css");
+@import url("assets/css/shippingApps.css");
+@import url("assets/css/style.css");
+@import url("assets/css/styles.css");

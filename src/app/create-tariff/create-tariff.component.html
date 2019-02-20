@@ -1,0 +1,567 @@
+<div>
+
+	<app-header (changed)="onChanged($event)"></app-header>
+	<!-- {{ctForm.value | json}} -->
+<form #ctForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0"
+		align="center">
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<table width="97%" height="99" border="0" cellpadding="0"
+					cellspacing="0" class="inner_table">
+					<tr>
+						<td width="811" height="33" align="left" class="toplinks"
+							colspan="2">Create Tariff</td>
+					</tr>
+					<tr>
+						<td height="48" align="left" class="input_text_main">
+							<table width="100%" height="63" border="0" align="center"
+								class="inner_table">
+								<tr class="input_text_blank_row">
+									<td height="22" colspan="9" class="input_text_blank_row">
+										<div class="errors"></div>
+									</td>
+								</tr>
+								<!--  error  -->
+								<tr>
+									<td height="20" colspan="9" class="input_text_blank_row">&nbsp;</td>
+								</tr>
+								<!-- first row -->
+								<tr>
+									<td width="1%" height="25">&nbsp;</td>
+									<td width="12%" class="CreateStandardTariffInnerTable">
+										<div align="center">
+											<span class="input_text_main"> <label
+												id="createDet_standard_validFrom">Valid From</label></span>
+										</div>
+									</td>
+
+									<td width="8%" class="CreateStandardTariffInnerTable"
+										align="center"><input type="text" name="startVal"
+										value="" [readonly]="!isReadOnly" id="validFrom" [(ngModel)]="ctFormModel.startVal" #startVal="ngModel" />
+										<input type="hidden" name="startVal"
+										value="" id="validFrom" [(ngModel)]="ctFormModel.startVal" />
+									</td>
+									<td width="5%"><a
+										onClick="setYears(2000, 2100);
+						   showCalender(this, 'validFrom');" style="cursor:pointer">
+											<img align="left" src="../../assets/images/cal.gif">
+									</a> <!-- Calender Script  -->
+
+										<table id="calenderTable">
+											<tbody id="calenderTableHead">
+												<tr>
+													<td colspan="4" align="center"><select
+														onChange="showCalenderBody(
+			   createCalender(document.getElementById('selectYear').value,
+		   this.selectedIndex, false));"
+														id="selectMonth">
+															<option value="0">Jan</option>
+															<option value="1">Feb</option>
+															<option value="2">Mar</option>
+															<option value="3">Apr</option>
+															<option value="4">May</option>
+															<option value="5">Jun</option>
+															<option value="6">Jul</option>
+															<option value="7">Aug</option>
+															<option value="8">Sep</option>
+															<option value="9">Oct</option>
+															<option value="10">Nov</option>
+															<option value="11">Dec</option>
+													</select></td>
+													<td colspan="2" align="center"><select
+														onChange="showCalenderBody(createCalender(this.value, 
+	  document.getElementById('selectMonth').selectedIndex, false));"
+														id="selectYear">
+													</select></td>
+													<td align="center"><a
+														onClick="closeCalender();" style="cursor:pointer"> <font color="#003333"
+															size="+1">X</font>
+													</a></td>
+												</tr>
+											</tbody>
+											<tbody id="calenderTableDays">
+												<tr style="">
+													<td>Sun</td>
+													<td>Mon</td>
+													<td>Tue</td>
+													<td>Wed</td>
+													<td>Thu</td>
+													<td>Fri</td>
+													<td>Sat</td>
+												</tr>
+											</tbody>
+											<tbody id="calender"></tbody>
+										</table> <!-- End Calender Script  --></td>
+
+									<td width="10%" class="CreateStandardTariffInnerTable">
+										<div align="center">
+											<span class="input_text_main"> <label
+												id="createDet_standard_validTo">Valid To</label>
+											</span>
+										</div>
+									</td>
+
+									<td width="8%" class="CreateStandardTariffInnerTable"
+										align="center"><input type="text" name="toVal" value=""
+										readonly="readonly" id="validTo" [(ngModel)]="ctFormModel.toVal" />
+										<input type="hidden" name="toVal" value=""
+										id="validTo" [(ngModel)]="ctFormModel.toVal" /></td>
+									<td width="5%"><a
+										onClick="setYears(2000, 2100);
+						   showCalender(this, 'validTo');" style="cursor:pointer">
+											<img align="left" src="../../assets/images/cal.gif">
+									</a> <!-- Calender Script  -->
+
+										<table id="calenderTable">
+											<tbody id="calenderTableHead">
+												<tr>
+													<td colspan="4" align="center"><select
+														onChange="showCalenderBody(
+			   createCalender(document.getElementById('selectYear').value,
+		   this.selectedIndex, false));"
+														id="selectMonth">
+															<option value="0">Jan</option>
+															<option value="1">Feb</option>
+															<option value="2">Mar</option>
+															<option value="3">Apr</option>
+															<option value="4">May</option>
+															<option value="5">Jun</option>
+															<option value="6">Jul</option>
+															<option value="7">Aug</option>
+															<option value="8">Sep</option>
+															<option value="9">Oct</option>
+															<option value="10">Nov</option>
+															<option value="11">Dec</option>
+													</select></td>
+													<td colspan="2" align="center"><select
+														onChange="showCalenderBody(createCalender(this.value, 
+	  document.getElementById('selectMonth').selectedIndex, false));"
+														id="selectYear">
+													</select></td>
+													<td align="center"><a
+														onClick="closeCalender();" style="cursor:pointer"> <font color="#003333"
+															size="+1">X</font>
+													</a></td>
+												</tr>
+											</tbody>
+											<tbody id="calenderTableDays">
+												<tr style="">
+													<td>Sun</td>
+													<td>Mon</td>
+													<td>Tue</td>
+													<td>Wed</td>
+													<td>Thu</td>
+													<td>Fri</td>
+													<td>Sat</td>
+												</tr>
+											</tbody>
+											<tbody id="calender"></tbody>
+										</table> <!-- End Calender Script  --></td>
+
+
+									<td width="15%" class="CreateStandardTariffInnerTable">
+										<div align="left">
+											<span class="input_text_main"> <label
+												id="createDet_Charge Type">Charge Type</label></span>
+										</div>
+									</td>
+
+									<td width="13%" class="CreateStandardTariffInnerTable">
+										<div align="left">
+											<span class="input_text_main"> <select
+												name="chargeType" id="chargeType" [(ngModel)]="ctFormModel.chargeType">
+													<option value="-1">Select</option>
+													<option value="DEMURRAGE">DEMURRAGE</option>
+													<option value="DETENTION">DETENTION</option>
+
+
+											</select>
+
+											</span>
+										</div>
+									</td>
+
+									<td width="11%" class="CreateStandardTariffInnerTable">
+										<div align="center">
+											<span class="input_text_main"> <label
+												id="createDet_standard_curr">Currency</label>
+											</span>
+										</div>
+									</td>
+
+									<td width="12%" class="CreateStandardTariffInnerTable">
+										<div align="left">
+											<span class="input_text_main" 
+											*ngFor="let curr of currencyPortDataDetails">{{curr.currency}}</span>
+										</div>
+									</td>
+								</tr>
+								<!-- Second Row -->
+								<tr>
+									<td>&nbsp;</td>
+									<td colspan="3"><span class="input_text_error_row">
+									</span></td>
+
+									<td colspan="3"><span class="input_text_error_row">
+									</span></td>
+
+									<td colspan="2"><span class="input_text_error_row"></span></td>
+									<td colspan="2">&nbsp;</td>
+
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<!-- List of containers -->
+
+					<tr>
+						<td height="48" align="left" class="input_text_main">
+							<div align="center" class="CreateStandardTariffInnerTable">
+
+								<table width="100%" height="65" border="0" class="inner_table">
+
+									<tr>
+										<td class="input_text_main" width="18%"><label
+											class="caption" style="background-color: transparent;"><!-- Select Port or Terminal --></label></td>
+										<td class="input_text_main"><!--<input type="radio"
+											name="selectedPortTerminal" id="selectedPortTerminal1"
+											checked="checked" value="1"
+											onclick="showPortTerminal('selectedPortTerminal');" [(ngModel)]="ctFormModel.selectedPortTerminal" /><label
+											for="selectedPortTerminal1">Port</label> <input type="radio"
+											name="selectedPortTerminal" id="selectedPortTerminal2"
+											value="2"
+											onclick="showPortTerminal('selectedPortTerminal');" [(ngModel)]="ctFormModel.selectedPortTerminal" /><label
+											for="selectedPortTerminal2">Terminal</label>--></td>
+									</tr>
+
+									<tr>
+										<td height="20" colspan="2" class="input_text_blank_row">
+											<span class="input_text_error_row"> </span>
+										</td>
+									</tr>
+
+
+									<tr>
+										<td height="20" colspan="5" class="input_text_blank_row">
+											<div id="div4" style="display: block;">
+												<span class="input_text_main">This agreement is
+													valid for all containers LOADED via the following port(s):</span>
+											</div>
+											<!--<div id="div3" style="display: none;">
+												<span class="input_text_main">This agreement is
+													valid for all containers LOADED via the following
+													terminal(s):</span>
+											</div>-->
+
+										</td>
+										<td class="input_text_main"><!-- <label
+											id="createDet_standard_selectAll">Select All</label><input
+											type="checkbox" name="selectAll" value="true" id="selectAll"
+											class="checkboxSelect" onclick="checkall('selectAll');" [(ngModel)]="ctFormModel.selectAll" /><input
+											type="hidden" id="__checkbox_selectAll"
+											name="__checkbox_selectAll" value="true" />--></td>
+									</tr>
+
+									<tr>
+
+										<td class="input_text_blank_row" colspan="6">
+											<div id="div1" style="display: block;">
+												<table width="100%" cellpadding="0" cellspacing="0"
+													border="0" style="border: 1px solid;">
+
+
+													<tr>
+
+															<td width="50%" valign="top" style="vertical-align: top">
+																	<table border="0" width="100%" cellpadding="0" cellspacing="0">
+																		<ng-container *ngFor="let po of currencyPortDataDetails">
+																		<tr *ngFor="let p of po.load_port;let even=even; let i=index;">	
+																			<td *ngIf="even" style="border: 1px solid;">
+																					<input type="checkbox" [name]="'nameEven'+i" #name="ngModel" [(ngModel)]="ctFormModel.name" /><label
+																					for="'loadPort-even'+i" class="checkboxLabel">{{p}}</label>
+																					<!--<span>{{p}}</span>-->
+																					<!--<span name="loadPort-even-txt" [(ngModel)]="ctFormModel.loadPort-even-txt">{{p}}</span>-->
+																			</td>
+																		</tr>
+																	</ng-container>
+																	</table>
+																</td>
+																<td width="50%" valign="top" style="vertical-align: top">
+																		<table border="0" width="100%" cellpadding="0" cellspacing="0">
+																			<ng-container *ngFor="let po of currencyPortDataDetails">
+																			<tr *ngFor="let f of po.load_port;let odd=odd; let j=index;">	
+																				<td *ngIf="odd" style="border: 1px solid;">
+																						<input type="checkbox" [name]="'nameOdd'+j" #name="ngModel" [(ngModel)]="ctFormModel.name" /><label
+																						for="'loadPort-odd'+i" class="checkboxLabel">{{f}}</label>
+																						<!--<span >{{f}}</span>-->
+																				</td>
+																			</tr>
+																		</ng-container>
+																		</table>
+																	</td>
+														<!-- <td width="50%" valign="top" style="vertical-align: top">
+															<table width="100%" border="1"
+																style="border-right: 1px solid">
+																<tr valign="top">
+																	<td class="input_text_main"><input
+																		type="checkbox" name="loadPort"
+																		value="IN3C9AP (ASHAPURA CONTAINER FREIGHT STATION)"
+																		id="checkIN3C9AP (ASHAPURA CONTAINER FREIGHT STATION)" /><input
+																		type="hidden"
+																		id="__checkbox_checkIN3C9AP (ASHAPURA CONTAINER FREIGHT STATION)"
+																		name="__checkbox_loadPort"
+																		value="IN3C9AP (ASHAPURA CONTAINER FREIGHT STATION)" /></td>
+																</tr>
+															</table>
+
+														</td> -->
+
+
+
+
+
+														<!-- <td width="50%" valign="top" style="vertical-align: top">
+															<table width="100%" border="1"
+																style="border-left: 1px solid">
+																<tr valign="top"
+																	style="vertical-align: top">
+																	<td class="input_text_main"><input
+																		type="checkbox" name="loadPort"
+																		value="IN3C9AP (ASHAPURA CONTAINER FREIGHT STATION)"
+																		id="checkIN3C9AP (ASHAPURA CONTAINER FREIGHT STATION)" /><input
+																		type="hidden"
+																		id="__checkbox_checkIN3C9AP (ASHAPURA CONTAINER FREIGHT STATION)"
+																		name="__checkbox_loadPort"
+																		value="IN3C9AP (ASHAPURA CONTAINER FREIGHT STATION)" /></td>
+																</tr>
+															</table>
+
+														</td> -->
+
+													</tr>
+
+
+
+												</table>
+											</div>
+
+										</td>
+
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+
+					<!-- Container size and tariff -->
+					<tr>
+						<td>
+							<div align="center" class="inner_table">
+								<table width="100%" height="120" border="0" align="center"
+									class="CreateStandardTariffInnerTable">
+									<tr>
+										<td height="20" colspan="6" class="input_text_blank_row">&nbsp;</td>
+									</tr>
+									<tr>
+										<td width="3%" height="22">&nbsp;</td>
+										<td width="15%" class="input_text_main"><label
+											id="createDet_standard_ContainerSize">Container Size</label></td>
+										<td width="39%" class="input_text_main"><input
+											type="checkbox" name="contSize20" value="20"
+											id="createDet_contSize-1" [(ngModel)]="ctFormModel.contSize20" /> <label
+											for="createDet_contSize-1" class="checkboxLabel">20
+												Ft</label> <input type="checkbox" name="contSize40" value="40"
+											id="createDet_contSize-2" [(ngModel)]="ctFormModel.contSize40" /> <label
+											for="createDet_contSize-2" class="checkboxLabel">40
+												Ft</label> <input type="checkbox" name="contSize45" value="45"
+											id="createDet_contSize-3" [(ngModel)]="ctFormModel.contSize45" /> <label
+											for="createDet_contSize-3" class="checkboxLabel">45
+												Ft</label> <input type="hidden"
+											id="__multiselect_createDet_contSize"
+											name="__multiselect_contSize" value="" [(ngModel)]="ctFormModel.__multiselect_contSize" /></td>
+										<td width="43%" class="input_text_main">&nbsp;</td>
+									</tr>
+									<tr>
+										<td height="20" colspan="6" class="input_text_blank_row"><span
+											class="input_text_error_row"> </span></td>
+									</tr>
+									<tr>
+										<td height="22">&nbsp;</td>
+										<td class="input_text_main"><label
+											id="createDet_standard_cargoType">Cargo Type</label></td>
+										<td class="input_text_main"><input type="checkbox"
+											name="contTypeDRY" value="DRY" id="createDet_contType-1" [(ngModel)]="ctFormModel.contTypeDRY" />
+											<label for="createDet_contType-1" class="checkboxLabel">DRY</label>
+											<input type="checkbox" name="contTypeIMO" value="IMO"
+											id="createDet_contType-2" [(ngModel)]="ctFormModel.contTypeIMO" /> <label
+											for="createDet_contType-2" class="checkboxLabel">IMO</label>
+											<input type="checkbox" name="contTypeREEF" value="REEF"
+											id="createDet_contType-3" [(ngModel)]="ctFormModel.contTypeREEF" /> <label
+											for="createDet_contType-3" class="checkboxLabel">REEF</label>
+											<input type="hidden" id="__multiselect_createDet_contType"
+											name="__multiselect_contType" value="" [(ngModel)]="ctFormModel.__multiselect_contType" /></td>
+										<td class="input_text_main"></td>
+									</tr>
+									<tr>
+										<td height="20" colspan="6" class="input_text_blank_row"><span
+											class="input_text_error_row"> </span></td>
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+
+					<!-- Free Days Record -->
+					<tr>
+						<td>
+							<table width="100%" height="127" border="0" align="left"
+								class="inner_table">
+								<tr>
+
+									<td height="20" colspan="5" class="input_text_blank_row"></td>
+								</tr>
+								<tr>
+									<td>
+										<table align="left">
+											<tr>
+												<td height="22">
+													<!-- <input name="0122" type="submit" id="0122" value="+" /> -->
+												</td>
+												<td class="input_text_main"></td>
+												<td></td>
+												<td colspan="2" class="input_text_error_row"></td>
+
+											</tr>
+											<tr>
+												<td height="22">
+													<div align="left">
+														<!--<input type="button" value="Add Slab"	
+															onclick="addCheckRow('packagesList')" />-->
+														<!-- <input name="0122" type="submit" id="0122" value="+" /> -->
+													</div>
+												</td>
+												<td hight="22">
+													<!-- <input name="013" type="submit" id="013" value="-" /> -->
+													<!--<input type="button" value="Del Slab"
+													onclick="deleteRow('packagesList')" />-->
+												</td>
+												<td></td>
+												<td width="11%" class="input_text_main"><label
+													id="createDet_standard_freeDays">Free Days</label></td>
+												<td width="56%" class="input_text_main"><input
+													type="text" name="freeDays" value=""
+													id="createDet_freeDays" [(ngModel)]="ctFormModel.freeDays" /></td>
+											</tr>
+
+										</table>
+									</td>
+								</tr>
+
+
+								<tr>
+									<td>
+										<table id="packagesList" align="left">
+											<tr class="input_text_main">
+
+												<td><label id="createDet_standard_from">From</label></td>
+												<td height="32"><label id="createDet_standard_to">To</label></td>
+												<td height="32" colspan="2"><label
+													id="createDet_standard_rate">Rate</label></td>
+											</tr>
+											<tr class="input_text_main">
+
+												<td><input type="text" name="packagesfrom0" size="4"
+													value="0" readonly="readonly"
+													id="PackagesAction_packages_0_from" />
+													<input type="hidden" name="packagesfrom0" size="4"
+													id="PackagesAction_packages_0_from" [(ngModel)]="ctFormModel.packagesfrom0" /></td>
+												<td><input type="text" name="packagesto0" size="4"
+													value="" id="PackagesAction_packages_0_to" [(ngModel)]="ctFormModel.packagesto0" /></td>
+												<td><input type="text" name="packagescurrency0"
+													size="6" maxlength="10" value=""
+													id="PackagesAction_packages_0_currency" [(ngModel)]="ctFormModel.packagescurrency0" /></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+
+
+								<tr class="input_text_main">
+									<td>
+										<table align="left">
+											<tr class="input_text_main">
+												<td></td>
+												<td height="32"></td>
+												<td height="32" colspan="2"></td>
+											</tr>
+
+										</table>
+									</td>
+								</tr>
+
+
+
+							</table>
+						</td>
+					</tr>
+
+
+					<!-- Remark -->
+					<tr>
+						<td>
+							<table width="100%" height="72" border="0" align="center"
+								class="inner_table">
+								<tr>
+									<td height="20" colspan="6" class="input_text_blank_row"><span
+										class="input_text_error_row"></span></td>
+								</tr>
+								<tr>
+									<td height="22" colspan="6">
+										<div align="left">
+											<input type="text" name="remarks" size="80" maxlength="80"
+												value="" id="createDet_remarks" [(ngModel)]="ctFormModel.remarks" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td height="20" colspan="6" class="input_text_blank_row"><label
+										id="createDet_standard_remarks">Remarks field is
+											optional; if entered, should contain atleast 10 char and not
+											more than 80 chars</label></td>
+								</tr>
+								<tr>
+									<td height="2" colspan="6" class="input_text_blank_row"></td>
+								</tr>
+							</table>
+
+						</td>
+					</tr>
+
+					<tr>
+						<td height="25" align="right" valign="middle" class="btnArea"
+							colspan="2"><button class="buttons">Create</button>
+							</td>
+					</tr>
+				</table>
+			</td>
+		</tr>			
+
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+
+	</table>
+</form>
+</div>

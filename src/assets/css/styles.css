@@ -1,0 +1,51 @@
+body {
+	font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica,
+		sans-serif;
+}
+
+a {
+	color: #c75f3e;
+}
+
+#mytable {
+	padding: 0;
+	margin: 0;
+}
+
+th {
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 1px 1px 1px 1px;
+	background: #4EBCD0;
+}
+
+td {
+	padding: 2px 2px 2px 4px;
+	align: left;
+}
+
+td.ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+td.alt {
+	background: #B0E2EA;
+	color: #000;
+	font: 11px Arial;
+	text-align: left;
+}
+
+td.header {
+	background: #B0E2EA;
+	color: #000;
+	font: 12px Arial;
+	text-align: center;
+}
+
+.text {
+	font: 11px Arial;
+	color: #000;
+	background: #fff;
+}

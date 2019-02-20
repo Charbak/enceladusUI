@@ -1,0 +1,217 @@
+body {
+	background-position: 0.5cm 0cm;
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+td.MenuLeiste {
+	background-color: #00007b;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.tableHeading {
+	background-color: #99BBDD;
+	COLOR: #FFFFFF;
+	font-weight: bold;
+	font-size: 11px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.tablerow1 {
+	background-color: #FFFFFF;
+}
+
+.tablerow2 {
+	background-color: #FFFFE3;
+}
+
+.daydate {
+	color: #555555;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.menu {
+	color: #000000;
+	font-weight: bold;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.menu_a {
+	color: #000066;
+	font-weight: bold;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.menu_kl {
+	color: #000000;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.menu_kl_a {
+	color: #000066;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.page_link {
+	color: #0066B3;
+	font-size: 12pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.page_text {
+	color: #000000;
+	font-size: 13pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.text12 {
+	color: #000000;
+	font-size: 12pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.readonlytext {
+	color: #808080;
+	font-size: 10pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.sikreadonlytext {
+	color: #000000;
+	background-color: #E4E4E4;
+	font-size: 12pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.headline {
+	font-weight: bold;
+	color: #0066B3;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.headline-grid {
+	font-weight: bold;
+	color: #0066B3;
+	font-size: 9pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.headline_sw {
+	font-weight: bold;
+	color: #000000;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.headline_wh {
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.tiny-wh {
+	color: #000000;
+	font-size: 6pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.text {
+	color: #000000;
+	font-size: 10pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.text-bold {
+	font-weight: bold;
+	color: #000000;
+	font-size: 10pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.text-grid {
+	color: #000000;
+	font-size: 8pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.row-odd {
+	background-color: #FFFFE3;
+	font-size: 8pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.row-even {
+	background-color: #FFFFFF;
+	font-size: 8pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.text-grau {
+	color: #A7A7A7;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.text-wh-kl {
+	color: #FFFFFF;
+	font-size: 9pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.link_sw {
+	color: #000000;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.text_wh {
+	color: #FFFFFF;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.text_wh12 {
+	color: #FFFFFF;
+	font-size: 12pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.menutext {
+	color: #0000FF;
+	font-size: 14pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+	text-decoration: none;
+}
+
+.text_link {
+	color: #000000;
+	font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}
+
+.grid_link {
+	color: #000000;
+	font-size: 10pt;
+	font-family: Arial, Helvetica, Sans-serif, Verdana;
+}

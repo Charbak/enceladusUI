@@ -24,8 +24,23 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "scripts": []
+            ],  
+            "scripts": [
+              "src/assets/js/angular.min.js",
+              "src/assets/js/bill.js",
+              "src/assets/js/calendar.js",
+              "src/assets/js/confirm.js",
+              "src/assets/js/countryConfig.js",
+              "src/assets/js/DDConfiguration.js",
+              "src/assets/js/eddi2.js",
+              "src/assets/js/lightbox.js",
+              "src/assets/js/menu_array.js",
+              "src/assets/js/menu.js",
+              "src/assets/js/newRow.js",
+              "src/assets/js/ng_createTariff.js",
+              "src/assets/js/prototype.js",
+              "src/assets/js/user.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -81,7 +96,22 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/angular.min.js",
+              "src/assets/js/bill.js",
+              "src/assets/js/calendar.js",
+              "src/assets/js/confirm.js",
+              "src/assets/js/countryConfig.js",
+              "src/assets/js/DDConfiguration.js",
+              "src/assets/js/eddi2.js",
+              "src/assets/js/lightbox.js",
+              "src/assets/js/menu_array.js",
+              "src/assets/js/menu.js",
+              "src/assets/js/newRow.js",
+              "src/assets/js/ng_createTariff.js",
+              "src/assets/js/prototype.js",
+              "src/assets/js/user.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

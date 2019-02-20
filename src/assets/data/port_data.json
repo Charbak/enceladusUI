@@ -1,0 +1,30 @@
+[
+	{
+		"country_name": "Denmark",
+		"load_port": [
+			"DKAARPT",
+			"DKCPHTM"
+		],
+		"currency": "DKK"
+	},
+	{
+		"country_name": "Germany",
+		"load_port": [
+			"DEBRV06",
+			"DEBRVTM",
+			"DEHAMCA",
+			"DEHAMEK"
+		],
+		"currency": "EUR"
+	},	
+	{
+		"country_name": "China",
+		"load_port": [
+			"CNIWNCT",
+			"CNIWNMC",
+			"CNNANCT",
+			"CNNPOYD"
+		],
+		"currency": "CNY"
+	}
+]
